@@ -57,6 +57,13 @@ body::before {
   margin-bottom: 24px;
   line-height: 1.1;
   text-transform: uppercase;
+  background: #eaf2ff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(59,123,226,0.08);
+  padding: 18px 0 12px 0;
+  letter-spacing: 2px;
+  font-weight: 900;
+  border: 2px solid #b0d0ff;
 }
 
 .secao {
