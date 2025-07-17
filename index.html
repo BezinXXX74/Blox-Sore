@@ -24,7 +24,7 @@
     <div class="avisos">
       <div class="aviso">
         <span>✔ Aceitamos apenas PIX</span>
-        <span>✔ NÃO fazemos trocas!!</span>
+        <span>✔ Aceitamos se valer a pena!</span>
       </div>
     </div>
 
@@ -38,16 +38,27 @@
       .then(produtos => {
         const secrets = produtos.filter(p => p.tipo === 'secret');
         const gods = produtos.filter(p => p.tipo === 'god');
-        const criarCard = (p) => `
-          <div class="produto">
-            <img src="images/${p.imagem}" alt="${p.nome}">
-            <div class="info">
-              <span class="nome">${p.nome}</span>
-              <span class="preco">${p.preco}</span>
+        const criarCard = (p) => {
+          const indisponivel = p.estoque === 0;
+          return `
+            <div class="produto${indisponivel ? ' indisponivel' : ''}">
+              <img src="images/${p.imagem}" alt="${p.nome}">
+              ${indisponivel ? '<span class="x-indisponivel">✖</span>' : ''}
+              <div class="info">
+                <span class="nome">${p.nome}</span>
+                <span class="preco">${p.preco}</span>
+                <span class="mutacao">${p.nome === 'LaVaca' ? 'diamante' : 'mutação'}</span>
+                <span class="estoque">Estoque: ${p.estoque}</span>
+              </div>
+              <a 
+                href="${indisponivel ? '#' : 'https://discord.gg/t9pD8YZdXn'}"
+                target="_blank"
+                class="botao-comprar${indisponivel ? ' disabled' : ''}"
+                ${indisponivel ? 'tabindex="-1" aria-disabled="true"' : ''}
+              >${indisponivel ? 'Indisponível' : 'Comprar'}</a>
             </div>
-            <a href="https://discord.gg/t9pD8YZdXn" target="_blank" class="botao-comprar">Comprar</a>
-          </div>
-        `;
+          `;
+        };
         document.getElementById('secrets').innerHTML = secrets.map(criarCard).join('');
         document.getElementById('gods').innerHTML = gods.map(criarCard).join('');
       });
