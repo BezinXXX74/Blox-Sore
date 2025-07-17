@@ -3,60 +3,80 @@
     "nome": "LaVaca",
     "preco": "R$ 15,00",
     "imagem": "lavaca.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 5,
+    "mutacao": "diamante"
   },
   {
     "nome": "Sammy Spyder",
     "preco": "R$ 18,00",
     "imagem": "sammyspyder.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 0,
+    "mutacao": "não possui"
   },
   {
     "nome": "Tralalelitos",
     "preco": "R$ 20,00",
     "imagem": "tralalelitos.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 10,
+    "mutacao": "não possui"
   },
   {
     "nome": "Medussy",
     "preco": "R$ 35,00",
     "imagem": "medussy.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 15,
+    "mutacao": "não possui"
   },
   {
     "nome": "La Grande Combination",
     "preco": "R$ 50,00",
     "imagem": "lagrandecombination.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 0,
+    "mutacao": "não possui"
   },
   {
     "nome": "Tralalero Tralala",
     "preco": "R$ 3,00",
     "imagem": "tralalerotralala.jpg",
-    "tipo": "god"
+    "tipo": "god",
+    "estoque": 1,
+    "mutacao": "não possui"
   },
   {
     "nome": "Odin Din Din Dun",
     "preco": "R$ 5,00",
     "imagem": "odindindindun.jpg",
-    "tipo": "god"
+    "tipo": "god",
+    "estoque": 0,
+    "mutacao": "não possui"
   },
   {
     "nome": "Trenostruzzo",
     "preco": "R$ 8,00",
     "imagem": "trenostruzzo.jpg",
-    "tipo": "god"
+    "tipo": "god",
+    "estoque": 0,
+    "mutacao": "não possui"
   },
   {
     "nome": "Unclito",
     "preco": "R$ 10,00",
     "imagem": "unclito.jpg",
-    "tipo": "god"
+    "tipo": "god",
+    "estoque": 0,
+    "mutacao": "não possui"
   },
   {
     "nome": "hostpost",
     "preco": "R$ 35,00",
     "imagem": "hostpost.jpg",
-    "tipo": "secret"
+    "tipo": "secret",
+    "estoque": 0,
+    "mutacao": "não possui"
   }
 ]
