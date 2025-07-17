@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .produto img {
@@ -95,6 +96,32 @@ body {
 
 .botao-comprar:hover {
   background: #2b5cc9;
+}
+
+.produto.indisponivel img {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.produto .x-indisponivel {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e23b3b;
+  font-size: 3rem;
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 2;
+  text-shadow: 1px 1px 8px #fff, 0 0 2px #fff;
+}
+
+.produto.indisponivel .botao-comprar {
+  background: #aaa;
+  color: #fff;
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: line-through;
 }
 
 .avisos {
